@@ -198,12 +198,15 @@ h2 {
 
 }
 .profile-image:hover .image_hover_bg{display:block}
-.flex-container1{
+.flex-container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	padding: 35px;
+}
+.items {
+
 }
 .product-box {
   position: relative;
@@ -274,4 +277,12 @@ hr.line {
 	color: orange;
 	background-color: orange;
 	height: 5px;
+}
+
+@media only screen and (max-width: 980px) and (min-width: 752px) {
+	.flex-container {
+		display: flex;
+		width: 75%;
+		justify-content: center;
+	}
 }

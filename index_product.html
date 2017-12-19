@@ -9,66 +9,102 @@
 </head>
 <body>
 	<div class="products">
-  	<div class="flex-container1">
-			<ul class="list-inline">
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/lam.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
-							</div>
-		        <div class="overlay">
-		          <img src="temps/lopt.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/pl.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
-							</div>
-		        <div class="overlay">
-		          <img src="temps/pll.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/lift.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
-							</div>
-		        <div class="overlay">
-		          <img src="temps/loftD.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/llam.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
-							</div>
-		        <div class="overlay">
-		          <img src="temps/lamm.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		  </ul>
+  	<div class="flex-container">
+			<div class="items">
+				<ul class="list-inline">
+			    <li class="list-inline-item">
+			      <div class="product-box">
+			        <img src="temps/lam.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+			        <div class="overlay">
+			          <img src="temps/lopt.jpg" class="hover-image">
+			          <div class="text">
+			            <button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+			          </div>
+			        </div>
+			      </div>
+			    </li>
+			    <li class="list-inline-item">
+			      <div class="product-box">
+			        <img src="temps/pl.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+			        <div class="overlay">
+			          <img src="temps/pll.jpg" class="hover-image">
+			          <div class="text">
+			            <button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+			          </div>
+			        </div>
+			      </div>
+			    </li>
+			    <li class="list-inline-item">
+			      <div class="product-box">
+			        <img src="temps/lift.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+			        <div class="overlay">
+			          <img src="temps/loftD.jpg" class="hover-image">
+			          <div class="text">
+			            <button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+			          </div>
+			        </div>
+			      </div>
+			    </li>
+			    <li class="list-inline-item">
+			      <div class="product-box">
+			        <img src="temps/llam.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+			        <div class="overlay">
+			          <img src="temps/lamm.jpg" class="hover-image">
+			          <div class="text">
+			            <button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+			          </div>
+			        </div>
+			      </div>
+			    </li>
+			  </ul>
+			</div>
     </div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Залиште свої дані і наш експерт з вами звяжеться</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		       <div class="modal-body">
+								<form method="GET" action="mailto:test@example.com" enctype="text/plain">
+
+							    <div>Name</div>
+							    <input name="Name"/>
+
+							    <div>Phone</div>
+							    <input name="Phone"/>
+
+							    <div>Message</div>
+							    <textarea name="Message"></textarea>
+
+							    <br/>
+							    <input type="submit" value="Send" />
+
+							    <input type="hidden" name="body" />
+							</form>
+		       </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Send message</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	<hr class="line">
 		<div class="container">
 			<div class="row">
@@ -105,6 +141,7 @@
 		</div>
 </div>
 
+<script src="js/main.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
