@@ -1,9 +1,36 @@
 body {
-	font-family: Arial, sans-serif; 
+	font-family: Arial, sans-serif;
 	color: white;
 	padding: 0;
 	margin: 0;
 }
+
+.navigation-bar {
+    width: 100%;
+    height: 80px;
+    background-color:rgb(10, 9, 8);
+		text-align: center;
+		color: white;
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.containerbakk{
+	background-image: url("temps/bakk.png");
+	background-size:cover;
+}
+
 
 .clearfix {
     content: ' ';
@@ -16,59 +43,56 @@ div {
 }
 
 header {
-	background: url(../WebNew/temps/bakk.png) 
+	background: url(../WebNew/temps/bakk.png)
 	no-repeat center top;
 	cover;
 	height: auto;
-	padding-bottom: 330px;
 }
 
-.container {
-    width: 960px;
-    margin: 0 auto;
+.container-sloi {
+	background-image: url("temps/sloi.png");
+	display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
 
+-webkit-box-align: center;
+-moz-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+
+-webkit-box-pack: center;
+-moz-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+}
+
+.text-sloi{
+margin-top: 200px;
+margin-bottom: 200px;
+text-align: center;
+}
+
+.text-sl{
+	text-align: center;
 }
 
 .logo {
-	margin-top: 22px;
-	float: left;
-}
-nav {
-	float: right;
-}
-.menu {
-	padding: 0;
-	margin: 0;
-	display: block;
-}
-.menu li {
-	float: left;
-	display: block;
-	margin-right: 55px;
-	font-size: 16px;
-	margin-top: 35px;
+	line-height: 200px;
 }
 
-.menu li a {
-	color: white;
-	text-decoration: none;
 
-}
-.back {
-background:
-url(../WebNew/temps/sloi.png) top center fixed;
-height: 100%;
-position: relative;
-overflow: hidden;
-width: 100%
-   }
-   
+
+
 .title__first {
 	font-size 40px;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 295px; 
+	margin-top: 295px;
 }
 
 form {
@@ -90,22 +114,7 @@ form {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-}
-.servis {
-	text-align: center 100%;
-
-
-}
-.servis__item {
-	width 495px;
-	float: left;
-	text-align: center;
-	
-}
-.servis__item h1 {
-	text-align: center;
-	font-size: 15px;
-	color: #ffa705;
+		border-radius: 12px;
 }
 
 
@@ -113,80 +122,6 @@ form {
 
 
 
-body {
-	margin: 0px;
-}
-.bg {
-	background-color: #232324;
-	height: 70px;
-}
-.li1 {
-	display: inline-block;
-	padding: 30px;
-	color: #ffffff;
-	font-size: 13px;
-	position: relative;
-	left: 100px;
-}
-.button {
-    background-color: #ffa705;
-    border: none;
-    color: white;
-    padding: 18px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body, html {
-    height: 100%;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: #ffffff;
-}
-
-.container p {
-    width: 500px;
-    padding: 40px;
-}
-.img img {
-  vertical-align: middle;
-}
-/*.text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-align:  center;*/
-}
-.image {
-	position	: relative;
-	width		: 100%; /* for IE 6 */
-}
-
-h2 {
-	position	: absolute;
-	top		: 200px;
-	left		: 0;
-	width		: 100%;
-	align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-align:  center;
-}
 
 
 /*стилі для продукції*/
@@ -200,13 +135,9 @@ h2 {
 .profile-image:hover .image_hover_bg{display:block}
 .flex-container{
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 35px;
-}
-.items {
-
+	align-items: center;
+  justify-content: center;
+	text-align: center;
 }
 .product-box {
   position: relative;
@@ -215,6 +146,9 @@ h2 {
 
 .image {
   display: block;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 5%;
 }
 
 .overlay {
@@ -244,6 +178,9 @@ h2 {
 
 .hover-image {
   display: none;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 5%;
 }
 
 .product-box:hover .hover-image {
@@ -263,6 +200,10 @@ h2 {
 	cursor:pointer;
 }
 
+.text-product{
+	margin-bottom: 5%;
+}
+
 ul.hr {
  margin: 5%;
  padding: 5%;
@@ -277,12 +218,17 @@ hr.line {
 	color: orange;
 	background-color: orange;
 	height: 5px;
+	margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 980px) and (min-width: 752px) {
-	.flex-container {
-		display: flex;
-		width: 75%;
-		justify-content: center;
+.modal-title {
+	color: black;
+}
+
+.modal-content{
+	background-color: rgb(99, 98, 102);
 	}
+
+.container-fluid{
+	color: rgb(34, 41, 40);
 }
