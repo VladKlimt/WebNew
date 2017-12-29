@@ -10,42 +10,31 @@
 </head>
 
 <body>
+	<nav class="navigation-bar">
+		<img class="logo" src="temps/logo.png">
+		<a href="#">головна</a>
+		<a href="#">продукція</a>
+		<a href="#">контакти</a>
+		<a href="#">про нас</a>
+		<img class="logo" src="temps/menu icon.png" >
+</nav>
 
 <header>
 	<div class="container">
 		<div class="heading clearfix">
-		<img src="temps/logo.png" alt="../WebNew/index.html" class="logo">
-	    	<nav>
-			 <ul class="menu">
-				<li>
-					<a href="#">ГОЛОВНА</a>
-				</li>
-				<li>
-					<a href="#">ПРОДУКЦІЯ</a>
-				</li>
-				<li>
-					<a href="#">КОНТАКТИ</a>
-				</li>
-				<li>
-					<a href="#">БЛОГ</a>
-				</li>
-				<li>
-					<a href="#">ПРО НАС</a>
-				</li>
-			 </ul>
+			<div class="title__first">
+		 	<h1>ПІДПИШИСЬ НА РОЗСИЛАННЯ</h1>
+		  </div>
 
-		     </nav>
 		</div>
 	</div>
 	<div class="title">
-		 <div class="title__first">
-			<h1>ПІДПИШИСЬ НА РОЗСИЛАННЯ</h1>
-		 </div>
+
 
 <form action="/action_page.php">
-  <input type="text" name="firstname" value="Ім'я">
+  <input type="text" name="firstname" placeholder="Ім'я">
   <br><br>
-  <input type="text" name="lastname" value="Ел. пошта">
+  <input type="text" name="lastname" placeholder="Ел. пошта">
   <br><br>
   <input class="button" type="submit" value="ВІДПРАВИТИ">
 </form>
@@ -53,79 +42,111 @@
 
 </header>
 
-<section>
-	<div class="servis clearfix">
-		<div class="servis__item">
-			 <h1> ЛЕГКЕ ТА ПРИЄМНЕ КОРИСТУВАННЯ
-                 НАШИМИ ЛАМПАМИ ВАМ ГАРАНТОВАНО</h1>
-             <p>ПОДИВИТИСЬ НАШУ ПРОДУКЦІЮ</p>
-		 </div class="back">
-    	         <img src="temps/sloi.png">
-         </div>
-</section>
 
-<section>
+	<div class="container-sloi">
+		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-4 col-12">
+		<div class="text-sloi"><h3>легке та приємне користування нашими лампами вам гарантовано</h3></div>
+		</div>
+	</div>
+
+
 	<div class="products">
-  	<div class="flex-container1 col-sm-12">
-			<ul class="list-inline">
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/lam.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
+		<div class="flex-container">
+			<div class="items">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<div class="product-box">
+							<img src="temps/lam.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+							<div class="overlay">
+								<img src="temps/lopt.jpg" class="hover-image">
+								<div class="text">
+									<button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+								</div>
 							</div>
-		        <div class="overlay">
-		          <img src="temps/lopt.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/pl.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<div class="product-box">
+							<img src="temps/pl.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+							<div class="overlay">
+								<img src="temps/pll.jpg" class="hover-image">
+								<div class="text">
+									<button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+								</div>
 							</div>
-		        <div class="overlay">
-		          <img src="temps/pll.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/lift.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<div class="product-box">
+							<img src="temps/lift.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+							<div class="overlay">
+								<img src="temps/loftD.jpg" class="hover-image">
+								<div class="text">
+									<button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+								</div>
 							</div>
-		        <div class="overlay">
-		          <img src="temps/loftD.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		    <li class="list-inline-item">
-		      <div class="product-box">
-		        <img src="temps/llam.jpg" alt="Avatar" class="image">
-							<div class="text">
-								<button class="button-product">Замовити</button>
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<div class="product-box">
+							<img src="temps/llam.jpg" alt="Avatar" class="image">
+								<div class="text">
+									<button class="button-product">Замовити</button>
+								</div>
+							<div class="overlay">
+								<img src="temps/lamm.jpg" class="hover-image">
+								<div class="text">
+									<button type="button" class="button-product" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Замовити</button>
+								</div>
 							</div>
-		        <div class="overlay">
-		          <img src="temps/lamm.jpg" class="hover-image">
-		          <div class="text">
-		            <button class="button-product">Замовити</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		  </ul>
-    </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Залиште свої дані і наш експерт з вами звяжеться</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					 <div class="modal-body">
+								<form method="GET" action="mailto:test@example.com" enctype="text/plain">
+
+									<div>Name</div>
+									<input name="Name"/>
+
+									<div>Phone</div>
+									<input name="Phone"/>
+
+									<div>Message</div>
+									<textarea name="Message"></textarea>
+
+									<br/>
+									<input type="submit" value="Send" />
+
+									<input type="hidden" name="body" />
+							</form>
+					 </div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Send message</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	<hr class="line">
 		<div class="container">
 			<div class="row">
@@ -138,29 +159,28 @@
 					<div class="col-md-4">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nunc eu elit tristique tincidunt sagittis id enim. Suspendisse lobortis mattis odio et vehicula. Vestibulum.
 				 </div>
-				<div <div class="col-md-4">
+				<div  class="col-md-4">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nunc eu elit tristique tincidunt sagittis id enim. Suspendisse lobortis mattis odio et vehicula. Vestibulum.
 			 </div>
 			</div>
 		</div>
 	<hr class="line">
 			<div class="container">
-	  		<div class="row">
-			    <div class="col-sm">
-			      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
-			    </div>
-				    <div class="col-sm">
-				    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
-				    </div>
-			    <div class="col-sm">
-			      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
-			    </div>
+				<div class="row">
 					<div class="col-sm">
-			      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
-		    </div>
-	  	</div>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
+					</div>
+						<div class="col-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
+						</div>
+					<div class="col-sm">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
+					</div>
+					<div class="col-sm">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi sem, eleifend sit amet dolor vitae, maximus luctus arcu. Praesent ac tempor tortor. Nulla non iaculis sapien, nec commodo arcu. Nullam tellus dolor, feugiat quis mauris feugiat, gravida vulputate libero. Nam semper purus metus, nec facilisis massa faucibus eu. Proin erat ante, mollis ut blandit ut, ultricies quis odio
+				</div>
+			</div>
 		</div>
-
 	</div>
 </section>
 
@@ -182,7 +202,7 @@
 	</div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="js/main.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
